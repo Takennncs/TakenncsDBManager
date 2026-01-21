@@ -1,184 +1,106 @@
-========================================================================
-                     TAKENNCSDEV MANAGER v1.0
-                  MySQL Database Management Tool
-========================================================================
+# Takenncsdev Manager
 
-⚠️ DISCLAIMER & WARNING
-────────────────────────────────────────────────────────────
-THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. 
-THE DEVELOPER IS NOT RESPONSIBLE FOR ANY DATA LOSS, CORRUPTION, 
-OR DAMAGE CAUSED BY THIS SOFTWARE.
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
+![.NET](https://img.shields.io/badge/.NET-4.8-purple)
+![MySQL](https://img.shields.io/badge/MySQL-Compatible-orange)
 
-YOU ARE SOLELY RESPONSIBLE FOR:
-• Backing up your data before using this tool
-• Testing changes in a development environment first
-• Understanding the consequences of SQL commands
-• Securing your database connections
+A modern Windows GUI application for MySQL database management. This lightweight, intuitive desktop tool provides an alternative to web-based database managers like phpMyAdmin.
 
-USE AT YOUR OWN RISK!
-────────────────────────────────────────────────────────────
+## ⚠️ IMPORTANT DISCLAIMER
 
-📌 WHAT DOES THIS PROGRAM DO?
-────────────────────────────────────────────────────────────
-This is a MySQL database management tool that allows:
+**THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.**  
+**THE DEVELOPER IS NOT RESPONSIBLE FOR ANY DATA LOSS, CORRUPTION, OR DAMAGE CAUSED BY THIS SOFTWARE.**
 
-✅ DATABASE OPERATIONS:
-   - View all databases and tables
-   - Browse data in tables
-   - Search and filter data
+**YOU ARE SOLELY RESPONSIBLE FOR:**
+- Backing up your data before using this tool
+- Testing changes in a development environment first
+- Understanding the consequences of SQL commands
+- Securing your database connections
 
-✅ DATA MODIFICATION:
-   - Add new rows (records)
-   - Modify existing data
-   - Delete rows
-   - Save changes to database
+**USE AT YOUR OWN RISK!**
 
-✅ ADDITIONAL FEATURES:
-   - Execute SQL queries
-   - Export data to CSV files
-   - Create new tables
-   - Delete tables and databases
+## 📥 Download
 
-✅ USER INTERFACE:
-   - Dark-themed interface
-   - Intuitive usage
-   - No web browser required
-   - Runs directly in Windows
+**For End Users:**  
+[Download TakenncsdevManager.exe](TakenncsdevManager.exe)
 
-────────────────────────────────────────────────────────────
+## 🚀 Quick Start
 
-🎯 WHO IS IT FOR?
-────────────────────────────────────────────────────────────
-• Developers working with MySQL
-• Students/learners studying databases
-• Small businesses for data management
-• Anyone needing a simple phpMyAdmin alternative
+1. **Download** the `TakenncsdevManager.exe` file
+2. **Run** the executable (Windows may warn you - click "More info" → "Run anyway")
+3. **Connect** to your MySQL server:
+   - Server: `localhost`
+   - Port: `3306`
+   - Username: `root`
+   - Password: [your MySQL password]
 
-────────────────────────────────────────────────────────────
+## ✨ Features
 
-📥 HOW TO USE? (3 SIMPLE STEPS)
-────────────────────────────────────────────────────────────
-STEP 1: DOWNLOAD
-├─ Download "TakenncsdevManager.exe"
-└─ Save to your computer (e.g., Desktop)
+### 🗃️ Database Management
+- Browse all databases and tables
+- Search and filter tables
+- View table statistics
+- Create/Drop databases
 
-STEP 2: RUN
-├─ Double-click "TakenncsdevManager.exe"
-└─ If Windows asks, click "More info" → "Run anyway"
+### 📋 Table Operations
+- Add new tables with custom columns
+- Edit existing table structures
+- Insert/Update/Delete records
+- Real-time data synchronization
+- Export data to CSV format
 
-STEP 3: CONNECT
-┌─────────────────────────────────────┐
-│  MySQL Connection Settings          │
-├─────────────────────────────────────┤
-│  Server:   localhost                │
-│  Port:     3306                     │
-│  Username: root                     │
-│  Password: [your MySQL password]    │
-└─────────────────────────────────────┘
+### ⚡ Data Management
+- Intuitive data grid with editing
+- Quick search within tables
+- Column type detection
+- Smart defaults for new rows
 
-────────────────────────────────────────────────────────────
+### 🛠️ Advanced Tools
+- Built-in SQL Console
+- Connection manager (multiple servers)
+- Customizable UI themes
+- Quick table truncate/drop
 
-🔒 IMPORTANT SECURITY NOTES
-────────────────────────────────────────────────────────────
-1. NEVER USE ROOT USER IN PRODUCTION ENVIRONMENT
-2. ALWAYS CREATE BACKUPS BEFORE MAKING CHANGES
-3. USE STRONG PASSWORDS FOR DATABASE USERS
-4. RESTRICT ACCESS TO AUTHORIZED PERSONS ONLY
-5. THIS TOOL STORES PASSWORDS LOCALLY - SECURE YOUR COMPUTER
+## 🖥️ System Requirements
 
-────────────────────────────────────────────────────────────
+| Component | Minimum | Recommended |
+|-----------|---------|-------------|
+| **OS** | Windows 10 | Windows 11 |
+| **RAM** | 2 GB | 4 GB |
+| **Storage** | 50 MB free | 100 MB free |
+| **.NET** | 4.8 | 4.8+ |
+| **MySQL** | 5.7+ | 8.0+ |
 
-🚨 RISK ACKNOWLEDGMENT
-────────────────────────────────────────────────────────────
+## 🔒 Security Notes
+
+1. **NEVER** use root user in production environment
+2. **ALWAYS** create backups before making changes
+3. Use strong passwords for database users
+4. Restrict access to authorized persons only
+5. This tool stores passwords locally - secure your computer
+
+## 🚨 Risk Acknowledgment
+
 By using this software, you acknowledge and accept that:
-
 1. You understand SQL commands and their consequences
 2. You will create backups before any modifications
-3. The developer is not liable for any data loss
+3. The developer is **not liable** for any data loss
 4. You use this tool at your own discretion
 5. You are responsible for your own data security
 
-────────────────────────────────────────────────────────────
+## 📋 Safe Usage Guidelines
 
-📋 SAFE USAGE GUIDELINES
-────────────────────────────────────────────────────────────
-RECOMMENDED:
-• Use in development/testing environments only
-• Create test databases for practice
-• Review SQL commands before executing
-• Use read-only accounts for browsing
-• Log all sensitive operations
+### ✅ Recommended:
+- Use in development/testing environments only
+- Create test databases for practice
+- Review SQL commands before executing
+- Use read-only accounts for browsing
+- Log all sensitive operations
 
-NOT RECOMMENDED:
-• Using in production without thorough testing
-• Running unknown SQL scripts
-• Modifying live customer data without backup
-• Sharing database credentials
-• Leaving the tool running unattended
-
-────────────────────────────────────────────────────────────
-
-🛡️ DATA PROTECTION RESPONSIBILITY
-────────────────────────────────────────────────────────────
-YOU ARE RESPONSIBLE FOR:
-• Complying with data protection laws (GDPR, etc.)
-• Protecting sensitive information
-• Securing database connections
-• Managing user access permissions
-• Regular security audits
-
-THE DEVELOPER PROVIDES NO:
-• Data protection guarantees
-• Security certifications
-• Compliance verifications
-• Warranty of fitness for purpose
-
-────────────────────────────────────────────────────────────
-
-⚖️ LEGAL NOTICE
-────────────────────────────────────────────────────────────
-This software is distributed under MIT License.
-
-THE DEVELOPER MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND 
-CONCERNING THE SOFTWARE, WHETHER EXPRESS, IMPLIED, STATUTORY OR 
-OTHERWISE, INCLUDING WITHOUT LIMITATION WARRANTIES OF TITLE, 
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NONINFRINGEMENT, 
-ABSENCE OF LATENT OR OTHER DEFECTS, ACCURACY, OR THE PRESENCE OR 
-ABSENCE OF ERRORS.
-
-IN NO EVENT SHALL THE DEVELOPER BE LIABLE FOR ANY SPECIAL, DIRECT, 
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER 
-RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION 
-OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF 
-OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
-
-────────────────────────────────────────────────────────────
-
-✅ FINAL CHECKLIST BEFORE USE
-────────────────────────────────────────────────────────────
-☐ I have read and understood this disclaimer
-☐ I have created backups of important data
-☐ I am using this in a safe testing environment
-☐ I understand SQL commands and their risks
-☐ I accept full responsibility for my actions
-
-────────────────────────────────────────────────────────────
-
-📞 CONTACT & SUPPORT LIMITATIONS
-────────────────────────────────────────────────────────────
-While the developer may provide support:
-• No guarantee of response time
-• No obligation to fix issues
-• No responsibility for user errors
-• Support provided on best-effort basis only
-
-────────────────────────────────────────────────────────────
-© 2024 Takenncsdev. All rights reserved.
-This software is provided for educational and testing purposes.
-Use in production environments is NOT recommended without 
-professional database administration experience.
-────────────────────────────────────────────────────────────
-💡 TIP: Start with a small test database to familiarize 
-       yourself with the program before working with 
-       important data!
-────────────────────────────────────────────────────────────
+### ❌ Not Recommended:
+- Using in production without thorough testing
+- Running unknown SQL scripts
+- Modifying live customer data without backup
+- Sharing database credentials
+- Leaving the tool running unattended
